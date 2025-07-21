@@ -138,47 +138,6 @@
     }
 
 
-.partners {
-  background: #fff;
-  padding: 40px 0;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-  border-top: 2px solid #e0e0e0;
-  border-bottom: 0px solid #e0e0e0;
-}
-
-.partners-track {
-  display: flex;
-  width: max-content;
-  animation: scroll-partners 30s linear infinite;
-  gap: 60px;
-  padding-left: 100%;
-  align-items: center;
-}
-
-.partner-item {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #444;
-  white-space: nowrap;
-}
-
-.partner-item img {
-  height: 60px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-@keyframes scroll-partners {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 
 .services {
   background-color: #ffffff;
@@ -367,7 +326,7 @@
 <body>
 
   <header id="mainHeader">
-    <div class="logo">Sta7leh</div>
+    <div class="logo"><img src="logo_st/sta7leh_logo.png" alt="Sta7leh logo" style="width: 10%; margin-top: 1%;"></div>
     <nav id="nav-links">
       <ul id="main-menu">
         <li><a href="#about">About Us</a></li>
@@ -381,7 +340,7 @@
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Welcome to<br><img src="logo_st/sta7leh_logo_white.png" style="height: 80px;"></h1>
+      <h1>Welcome to <img src="logo_st/sta7leh_logo_white.png" style="height: 90px; margin-bottom: -25px;"></h1>
       <p>Everything you need, from groceries to gadgets,<br>delivered fast, smart, and with style.</p>
       <div class="hero-buttons">
         <a href="#services">Sign Up</a>
@@ -390,135 +349,177 @@
     </div>
   </section>
 
-  <section class="partners">
-  <div class="partners-track">
-    <div class="partner-item"><img src="logo_st/.png" alt="Partner 1"></div>
-  </div>
-</section>
 
 
-<section class="products" id="products" style="background: #ffffff; padding: 80px 20px;">
-  <div class="products-title" style="text-align: center;">
-    <h2 style="font-size: 2.8rem; color: #003d99; margin-bottom: 50px;">Categories</h2>
-  </div>
-
-  <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
-
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-car" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Vehicles
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-building" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Properties
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-mobile-alt" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Mobiles & Accessories
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-tv" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Electronics & Appliances
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-baby-carriage" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Kids & Babies
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-couch" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Furniture & Decor
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-industry" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Business & Industrial
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-dog" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Pets
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-bicycle" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Sports & Equipment
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-guitar" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Hobbies
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-briefcase" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Jobs
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-tshirt" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Fashion & Beauty
-    </div>
-    <div style="display: flex; align-items: center; font-size: 1.3rem; font-weight: 600; color: #002a80;">
-      <i class="fas fa-tools" style="color: #4ea3f1; font-size: 1.8rem; margin-right: 15px;"></i> Services
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Offers Section -->
-<section style="background: #f9f9f9; padding: 60px 20px;">
+<section id="popular-categories" style="background: #f8f8f8; padding: 60px 20px;">
   <div style="max-width: 1100px; margin: auto;">
-    <h2 style="font-size: 2rem; color: #003d99; margin-bottom: 40px; text-align: center;">Latest Offers</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px;">
-
-      <!-- Post 1 -->
-      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" style="width: 100%; height: 180px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <h3 style="font-size: 1rem; color: #002a80;">Used iPhone 12</h3>
-          <p style="color: #4ea3f1; font-weight: bold;">$400</p>
-          <p style="color: #666; font-size: 0.9rem;">Beirut, Lebanon</p>
-        </div>
+    <h2 style="font-size: 2rem; color: #003d99; margin-bottom: 40px;">Popular Categories</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+      
+      <!-- CATEGORY ITEM -->
+      <div>
+        <h3 style="font-size: 1.1rem; color: #003d99; margin-bottom: 10px;">
+          <i class="fas fa-car" style="color: #4ea3f1; margin-right: 8px;"></i>
+          <strong>Vehicles</strong>
+        </h3>
+        <p style="margin: 5px 0; color: #444;">Cars for Sale</p>
+        <p style="margin: 5px 0; color: #444;">Cars for Rent</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Vehicles &rsaquo;</a>
       </div>
 
-      <!-- Post 2 -->
-      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-        <img src="https://images.unsplash.com/photo-1616627988770-5d2f312af8f8" style="width: 100%; height: 180px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <h3 style="font-size: 1rem; color: #002a80;">Sofa Set (Like New)</h3>
-          <p style="color: #4ea3f1; font-weight: bold;">$180</p>
-          <p style="color: #666; font-size: 0.9rem;">Tripoli, Lebanon</p>
-        </div>
+      <div>
+        <h3><i class="fas fa-building" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Properties</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Apartments for Sale</p>
+        <p style="margin: 5px 0; color: #444;">Apartments for Rent</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Properties &rsaquo;</a>
       </div>
 
-      <!-- Post 3 -->
-      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-        <img src="https://images.unsplash.com/photo-1606813904700-224d7b47f7cc" style="width: 100%; height: 180px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <h3 style="font-size: 1rem; color: #002a80;">Mountain Bike</h3>
-          <p style="color: #4ea3f1; font-weight: bold;">$120</p>
-          <p style="color: #666; font-size: 0.9rem;">Saida, Lebanon</p>
-        </div>
+      <div>
+        <h3><i class="fas fa-mobile-alt" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Mobiles & Accessories</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Mobile Phones</p>
+        <p style="margin: 5px 0; color: #444;">Mobile Accessories</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Mobiles & Accessories &rsaquo;</a>
       </div>
 
-      <!-- Post 4 -->
-      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-        <img src="https://images.unsplash.com/photo-1552611052-33e04de081de" style="width: 100%; height: 180px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <h3 style="font-size: 1rem; color: #002a80;">Gaming PC Setup</h3>
-          <p style="color: #4ea3f1; font-weight: bold;">$850</p>
-          <p style="color: #666; font-size: 0.9rem;">Jounieh, Lebanon</p>
-        </div>
+      <div>
+        <h3><i class="fas fa-tv" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Electronics & Appliances</strong></h3>
+        <p style="margin: 5px 0; color: #444;">TV & Video</p>
+        <p style="margin: 5px 0; color: #444;">Speakers & Audio</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Electronics & Appliances &rsaquo;</a>
       </div>
 
-      <!-- Post 5 -->
-      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-        <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de" style="width: 100%; height: 180px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <h3 style="font-size: 1rem; color: #002a80;">Honda Civic 2014</h3>
-          <p style="color: #4ea3f1; font-weight: bold;">$9,300</p>
-          <p style="color: #666; font-size: 0.9rem;">Tyre, Lebanon</p>
-        </div>
+      <div>
+        <h3><i class="fas fa-couch" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Furniture & Decor</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Living Room</p>
+        <p style="margin: 5px 0; color: #444;">Bedroom</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Furniture & Decor &rsaquo;</a>
       </div>
 
-      <!-- Post 6 -->
-      <div style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25" style="width: 100%; height: 180px; object-fit: cover;">
-        <div style="padding: 15px;">
-          <h3 style="font-size: 1rem; color: #002a80;">Dining Table Set</h3>
-          <p style="color: #4ea3f1; font-weight: bold;">$260</p>
-          <p style="color: #666; font-size: 0.9rem;">Zahle, Lebanon</p>
-        </div>
+      <div>
+        <h3><i class="fas fa-industry" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Business & Industrial</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Restaurant Equipment</p>
+        <p style="margin: 5px 0; color: #444;">Construction Equipment</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Business & Industrial &rsaquo;</a>
+      </div>
+
+      <div>
+        <h3><i class="fas fa-dog" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Pets</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Pet Supplies</p>
+        <p style="margin: 5px 0; color: #444;">Dogs</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Pets &rsaquo;</a>
+      </div>
+
+      <div>
+        <h3><i class="fas fa-baby-carriage" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Kids & Babies</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Toys for Kids</p>
+        <p style="margin: 5px 0; color: #444;">Strollers & Seats</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Kids & Babies &rsaquo;</a>
+      </div>
+
+      <div>
+        <h3><i class="fas fa-bicycle" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Sports & Equipment</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Bicycles</p>
+        <p style="margin: 5px 0; color: #444;">Camping Gear</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Sports & Equipment &rsaquo;</a>
+      </div>
+
+      <div>
+        <h3><i class="fas fa-guitar" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Hobbies</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Collectibles</p>
+        <p style="margin: 5px 0; color: #444;">Instruments</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Hobbies &rsaquo;</a>
+      </div>
+
+      <div>
+        <h3><i class="fas fa-briefcase" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Jobs</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Job Seekers</p>
+        <p style="margin: 5px 0; color: #444;">Available Jobs</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Jobs &rsaquo;</a>
+      </div>
+
+      <div>
+        <h3><i class="fas fa-tshirt" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Fashion & Beauty</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Clothing</p>
+        <p style="margin: 5px 0; color: #444;">Accessories</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Fashion & Beauty &rsaquo;</a>
+      </div>
+
+      <div>
+        <h3><i class="fas fa-tools" style="color: #4ea3f1; margin-right: 8px;"></i> <strong style="color: #003d99;">Services</strong></h3>
+        <p style="margin: 5px 0; color: #444;">Home Repair</p>
+        <p style="margin: 5px 0; color: #444;">Personal Services</p>
+        <a href="#" style="color: #4ea3f1; font-weight: bold;">All in Services &rsaquo;</a>
       </div>
 
     </div>
   </div>
 </section>
 
+<section id="latest-offers" style="background: #fff; padding: 60px 20px;">
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="font-size: 2rem; color: #003d99; margin-bottom: 40px; text-align: center;">Latest Offers</h2>
+    <h2 style="font-size: 2rem; color: #003d99; margin-bottom: 40px;">Cars In Lebanon</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+      
+
+      <!-- START Offer Card -->
+      <div style="background: #fff; border: 1px solid #eee; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease;">
+        <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de" alt="Honda Civic" style="width: 100%; height: 160px; object-fit: cover;">
+        <div style="padding: 15px;">
+          <h3 style="font-size: 1rem; color: #002a80; margin-bottom: 8px;">Honda Civic 2014</h3>
+          <p style="color: #4ea3f1; font-weight: bold; margin-bottom: 6px;">$9,300</p>
+          <p style="color: #555; font-size: 0.9rem; margin-bottom: 6px;">Tyre, Lebanon</p>
+          <p style="color: #aaa; font-size: 0.75rem;">3 hours ago</p>
+        </div>
+      </div>
+      <!-- END Offer Card -->
+
+      <!-- You can copy the above block and change details to add more offers -->
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1616627988770-5d2f312af8f8" style="width: 100%; height: 160px; object-fit: cover;">
+        <div style="padding: 15px;">
+          <h3 style="font-size: 1rem; color: #002a80; margin-bottom: 8px;">Sofa Set (Like New)</h3>
+          <p style="color: #4ea3f1; font-weight: bold; margin-bottom: 6px;">$180</p>
+          <p style="color: #555; font-size: 0.9rem; margin-bottom: 6px;">Tripoli, Lebanon</p>
+          <p style="color: #aaa; font-size: 0.75rem;">Yesterday</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1606813904700-224d7b47f7cc" style="width: 100%; height: 160px; object-fit: cover;">
+        <div style="padding: 15px;">
+          <h3 style="font-size: 1rem; color: #002a80; margin-bottom: 8px;">Mountain Bike</h3>
+          <p style="color: #4ea3f1; font-weight: bold; margin-bottom: 6px;">$120</p>
+          <p style="color: #555; font-size: 0.9rem; margin-bottom: 6px;">Saida, Lebanon</p>
+          <p style="color: #aaa; font-size: 0.75rem;">1 week ago</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1552611052-33e04de081de" style="width: 100%; height: 160px; object-fit: cover;">
+        <div style="padding: 15px;">
+          <h3 style="font-size: 1rem; color: #002a80; margin-bottom: 8px;">Gaming PC Setup</h3>
+          <p style="color: #4ea3f1; font-weight: bold; margin-bottom: 6px;">$850</p>
+          <p style="color: #555; font-size: 0.9rem; margin-bottom: 6px;">Jounieh, Lebanon</p>
+          <p style="color: #aaa; font-size: 0.75rem;">2 days ago</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25" style="width: 100%; height: 160px; object-fit: cover;">
+        <div style="padding: 15px;">
+          <h3 style="font-size: 1rem; color: #002a80; margin-bottom: 8px;">Dining Table Set</h3>
+          <p style="color: #4ea3f1; font-weight: bold; margin-bottom: 6px;">$260</p>
+          <p style="color: #555; font-size: 0.9rem; margin-bottom: 6px;">Zahle, Lebanon</p>
+          <p style="color: #aaa; font-size: 0.75rem;">Today</p>
+        </div>
+      </div>
+    </div>
+        <h2 style="font-size: 2rem; color: #003d99; margin-bottom: 40px;">Properties Internatiannal</h2>
+  </div>
 </section>
+
 
 
 <!-- Categories Section -->
