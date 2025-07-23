@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Sta7leh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f0f8ff;
+    }
+
+    header {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+      width: 80px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding-top: 140px;
+      padding-bottom: 80px;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1581091215367-5c45f7f4bca9') center/cover no-repeat;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #e6e6e6;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      flex: 1;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .section-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .section-content h2 {
+      font-size: 2rem;
+      color: #003d99;
+      margin-bottom: 15px;
+    }
+
+    .section-content p {
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .services {
+      background-color: #ffffff;
+      padding: 80px 20px;
+      color: #000000;
+    }
+
+    .service-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      max-width: 1200px;
+      margin: 0 auto 100px;
+      flex-wrap: wrap;
+    }
+
+    .service-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .service-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .service-text h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: #002a80;
+    }
+
+    .service-text p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 15px;
+      line-height: 1.7;
+    }
+
+    .service-link {
+      color: #003bb5;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .service-link:hover {
+      color: #4873c9;
+    }
+
+    .service-img {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .service-img img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 60px 20px 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    footer h3, footer h4 {
+      color: #fff;
+    }
+
+    footer p, footer a, footer li {
+      font-size: 0.9rem;
+      color: #ccc;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><img src="logo_st/sta7leh_logo.png" alt="Sta7leh Logo" /></div>
+  <nav>
+    <ul>
+      <li><a href="index.html#about">Home</a></li>
+      <li><a href="index.html#services">What We Do</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="
+  padding-top: 140px;
+  padding-bottom: 80px;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),
+              url('logo_st/background.jpg') center/cover no-repeat;
+  color: white;">
+  <h1 style="font-size: 3.5rem; margin-bottom: 10px;">About Sta7leh</h1>
+  <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; color: #e6e6e6;">
+    The digital souk built for your street, your town, your life.
+  </p>
+</section>
+
+
+<section class="section">
+  <img src="logo_st/neighboorhood.jpg" alt="Local community" />
+  <div class="section-content">
+    <h2>Our Story</h2>
+    <p>It all started in a small Lebanese town. One of our founders needed a phone charger urgently, but had no idea where to get it quickly. The shops had it — but they were invisible online. That’s when Sta7leh was born.</p>
+    <p>A marketplace designed for *you* and *your neighborhood*, combining tradition with technology. Sta7leh brings the spirit of local souks into your pocket.</p>
+  </div>
+</section>
+
+<section class="section reverse">
+  <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Mission" />
+  <div class="section-content">
+    <h2>Our Mission</h2>
+    <p>We believe everyone should have access to local products, job opportunities, and trust-driven shopping. Our mission is to build a digital ecosystem that empowers local businesses, freelancers, and delivery agents — especially the youth.</p>
+    <p>Sta7leh is not just a marketplace. It's a movement toward human-first commerce.</p>
+  </div>
+</section>
+
+<section class="services">
+  <div class="service-row">
+    <div class="service-text">
+      <h2>Ultra-Connected Marketplace</h2>
+      <p>Sta7leh is your digital souk — connecting buyers, sellers, and couriers in real time. Whether you're shopping, selling, or delivering, everything happens smoothly in one smart platform.</p>
+      <a href="index.html#offers" class="service-link">Explore the Market</a>
+    </div>
+    <div class="service-img">
+      <img src="logo_st/design.png" alt="Connected Icon" />
+    </div>
+  </div>
+
+  <div class="service-row reverse">
+    <div class="service-text">
+      <h2>Certified & Personal Products</h2>
+      <p>From official brands to your next-door neighbor, everyone can sell on Sta7leh. We highlight verified sellers while letting individuals list unique, second-hand, or handmade goods.</p>
+      <a href="index.html#offers" class="service-link">Sell or Buy Now</a>
+    </div>
+    <div class="service-img">
+      <img src="logo_st/certified.png" alt="Certified Products Icon" />
+    </div>
+  </div>
+
+  <div class="service-row">
+    <div class="service-text">
+      <h2>Clear & Instant Communication</h2>
+      <p>Message buyers, sellers, and delivery agents directly through the app. Sta7leh keeps you informed at every step, so you always know who you're dealing with and where your order is.</p>
+      <a href="index.html#partners" class="service-link">Discover How It Works</a>
+    </div>
+    <div class="service-img">
+      <img src="logo_st/chat.png" alt="Communication Icon" />
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Sta7leh</h3>
+      <p>Your ultra-connected digital market for everything — local, fast, trusted.</p>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Safety Tips</a></li>
+        <li><a href="#">Terms & Privacy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <div style="display: flex; gap: 15px;">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2025 Sta7leh. Powered by GameBlox Studios.</div>
+</footer>
+
+</body>
+</html>
