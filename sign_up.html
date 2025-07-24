@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f2ff, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 1000px;
+      height: 600px;
+      background: #fff;
+      display: flex;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .info-section {
+      flex: 1;
+      background: linear-gradient(to right, #4ea3f1, #6c63ff);
+      color: white;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+    }
+
+    .info-section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .info-section p {
+      font-size: 12px;
+      max-width: 300px;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .info-section button {
+      background: transparent;
+      border: 1.5px solid white;
+      color: white;
+      padding: 10px 28px;
+      font-size: 13px;
+      border-radius: 22px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .info-section button:hover {
+      background: white;
+      color: #4ea3f1;
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 0.6s ease;
+    }
+
+    .form-section h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .social-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      background: #fff;
+      transition: 0.3s ease;
+    }
+
+    .social-button:hover {
+      background-color: #f5f8ff;
+    }
+
+    .social-button img {
+      width: 18px;
+      margin-right: 10px;
+    }
+
+    .separator {
+      text-align: center;
+      color: #888;
+      font-size: 12px;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: #ccc;
+    }
+
+    .separator::before {
+      left: 0;
+    }
+
+    .separator::after {
+      right: 0;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 18px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 13px;
+      background: transparent;
+      outline: none;
+    }
+
+    .form-group input:focus {
+      border-color: #4ea3f1;
+      box-shadow: 0 0 5px rgba(78, 163, 241, 0.15);
+    }
+
+    .form-group label {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: white;
+      padding: 0 5px;
+      color: #999;
+      font-size: 12px;
+      pointer-events: none;
+      transition: 0.2s ease;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -8px;
+      left: 12px;
+      font-size: 10px;
+      color: #4ea3f1;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #4ea3f1, #6c63ff);
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(78, 163, 241, 0.2);
+      transition: 0.3s ease;
+    }
+
+    .submit-btn:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+    }
+
+    .switch-link {
+      margin-top: 15px;
+      font-size: 12px;
+      text-align: center;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .switch-link:hover {
+      text-decoration: underline;
+    }
+
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column-reverse;
+        width: 95%;
+        height: auto;
+        border-radius: 20px;
+      }
+
+      .form-section, .info-section {
+        padding: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Info Section -->
+    <div class="info-section">
+      <h2>Hello, Friend!</h2>
+      <p>Already have an account? Sign in to stay connected.</p>
+      <button onclick="window.location.href='sign_in.html'">Sign In</button>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="form-section">
+      <h2>Create Account</h2>
+      <div class="social-buttons">
+        <div class="social-button">
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google"> Continue with Google
+        </div>
+        <div class="social-button">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Microsoft"> Continue with Microsoft
+        </div>
+        <div class="social-button">
+          <img src="https://cdn-icons-png.flaticon.com/512/179/179309.png" alt="Apple"> Continue with Apple
+        </div>
+      </div>
+
+      <div class="separator">or</div>
+
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder=" " required />
+          <label>Full Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder=" " required />
+          <label>Email</label>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder=" " required />
+          <label>Password</label>
+        </div>
+        <button class="submit-btn">Sign Up</button>
+        <div class="switch-link" onclick="window.location.href='sign_in.html'">
+          I already have an account
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
